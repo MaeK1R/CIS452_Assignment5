@@ -1,9 +1,16 @@
-﻿using System.Collections;
+﻿/*
+ * Matt Kirchoff
+ * slime.cs
+ * CIS452 Assignment 5
+ * slime ammo for factory
+ */
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class bullet : MonoBehaviour
+public class slime : MonoBehaviour
 {
     private float speed;
     public Score score;
@@ -12,6 +19,7 @@ public class bullet : MonoBehaviour
     {
         score = GameObject.Find("Score").GetComponent<Score>();
         speed = 15f;
+        Invoke("offFix", 3f);
     }
 
     // Update is called once per frame
@@ -21,7 +29,7 @@ public class bullet : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag.Equals("bullet"))
+        if (collision.gameObject.tag.Equals("slime"))
         {
             score.score += 1;
             Destroy(collision.gameObject);
@@ -44,5 +52,9 @@ public class bullet : MonoBehaviour
     void OnEnable()
     {
         gameObject.GetComponent<SpriteRenderer>().material.color = Color.green;
+    }
+    void offFix()
+    {
+        Destroy(this.gameObject);
     }
 }

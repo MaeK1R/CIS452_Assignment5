@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * Matt Kirchoff
+ * GunShoot.cs
+ * CIS452 Assignment 5
+ * Client class for the factory
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

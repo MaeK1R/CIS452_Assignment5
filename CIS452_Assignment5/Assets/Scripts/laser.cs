@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * Matt Kirchoff
+ * laser.cs
+ * CIS452 Assignment 5
+ * laser ammo for factory
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -10,7 +16,9 @@ public class laser : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        score = GameObject.Find("Score").GetComponent<Score>();
         speed = 15f;
+        Invoke("offFix", 3f);
     }
 
     // Update is called once per frame
@@ -42,5 +50,10 @@ public class laser : MonoBehaviour
     void OnEnable()
     {
         gameObject.GetComponent<SpriteRenderer>().material.color = Color.red;
+    }
+
+    void offFix()
+    {
+        Destroy(this.gameObject);
     }
 }

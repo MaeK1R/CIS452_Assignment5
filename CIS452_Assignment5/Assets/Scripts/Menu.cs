@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * Matt Kirchoff
+ * menu.cs
+ * CIS452 Assignment 5
+ * menu management
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;

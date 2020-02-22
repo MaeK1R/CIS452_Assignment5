@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * Matt Kirchoff
+ * SimpleAmmoFactory.cs
+ * CIS452 Assignment 5
+ * simple ammo factory, creates ammo object to be instantiated
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -22,18 +28,18 @@ public class SimpleAmmoFactory : MonoBehaviour
         else if (type.Equals("rocket"))
         {
 
-            if (ammo.GetComponent<rocket>() == null)
+            if (ammo.GetComponent<magic>() == null)
             {
-                ammo.AddComponent<rocket>();
+                ammo.AddComponent<magic>();
             }
 
         }
         else if (type.Equals("bullet"))
         {
 
-            if (ammo.GetComponent<bullet>() == null)
+            if (ammo.GetComponent<slime>() == null)
             {
-                ammo.AddComponent<bullet>();
+                ammo.AddComponent<slime>();
             }
 
         }

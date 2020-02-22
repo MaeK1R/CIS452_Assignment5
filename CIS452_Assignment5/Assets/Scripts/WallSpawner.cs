@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * Matt Kirchoff
+ * WallSpawner.cs
+ * CIS452 Assignment 5
+ * spawns wall obstacles
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

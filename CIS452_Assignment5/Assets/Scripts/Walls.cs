@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * Matt Kirchoff
+ * Walls.cs
+ * CIS452 Assignment 5
+ * moves walls and detects end condition
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -21,7 +27,7 @@ public class Walls : MonoBehaviour
     {
         if(collision.gameObject.tag.Equals("Player"))
         {
-            SceneManager.LoadScene(3);
+            SceneManager.LoadScene(2);
         }
     }
 }

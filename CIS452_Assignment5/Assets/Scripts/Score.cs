@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * Matt Kirchoff
+ * Score.cs
+ * CIS452 Assignment 5
+ * Score keeper for game, goes up 1 for correct hit and down 1 for incorrect hit
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;

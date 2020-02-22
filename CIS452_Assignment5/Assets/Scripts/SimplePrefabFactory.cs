@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * Matt Kirchoff
+ * SimplePrefabFactory.cs
+ * CIS452 Assignment 5
+ * Prefab factory for ammo factory, contains prefabs of what to spawn
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
